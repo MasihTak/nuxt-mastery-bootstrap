@@ -1,12 +1,12 @@
 <template>
   <p class="text-uppercase fw-bold text-secondary mb-0">lesson {{chapter.number}} - {{lesson.number}}</p>
   <h2 class="mt-0 fs-3">{{ lesson.title }}</h2>
-  <a v-if="lesson.sourceUrl"
+  <NuxtLink v-if="lesson.sourceUrl"
      class="text-muted d-inline-block pb-4"
-     :href="lesson.sourceUrl">Download Source Code</a>
-    <a v-if="lesson.downloadUrl"
+     :to="lesson.sourceUrl">Download Source Code</NuxtLink>
+    <NuxtLink v-if="lesson.downloadUrl"
        class="text-muted d-inline-block pb-4"
-       :href="lesson.downloadUrl">Download Video</a>
+       :to="lesson.downloadUrl">Download Video</NuxtLink>
     <VideoPlayer class="d-block pb-4" v-if="lesson.videoId" :videoId="lesson.videoId" />
   <p>{{ lesson.text }}</p>
 </template>
