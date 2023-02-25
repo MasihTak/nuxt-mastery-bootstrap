@@ -1,11 +1,11 @@
 <template>
-    <div class="course w-100 min-vh-100">
+    <div class="course w-100 h-100 min-vh-100">
         <div class="container h-100">
             <h1 class="text-center py-5">
                 Course:
                 <strong>Mastering Nuxt 3</strong>
             </h1>
-            <div class="row course-container justify-content-center gap-3">
+            <div class="row course-container justify-content-center gap-3 pb-5">
                 <aside class="col-2 bg-white rounded-2 shadow-sm p-4">
                     <h3 class="fs-5 fw-bold mb-4"> Chapters</h3>
                     <div class="d-flex flex-column mb-2"
@@ -47,8 +47,6 @@ const { chapters } = useCourse();
   background-color: $gray-100;
 }
 
-.course-container {
-  height: calc(100vh - 200px);
 .router-link-active {
   color: $blue-500 !important;
 }
