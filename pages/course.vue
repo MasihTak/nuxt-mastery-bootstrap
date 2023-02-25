@@ -49,5 +49,7 @@ const { chapters } = useCourse();
 
 .course-container {
   height: calc(100vh - 200px);
+.router-link-active {
+  color: $blue-500 !important;
 }
 </style>
