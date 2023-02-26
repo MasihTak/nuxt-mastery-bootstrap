@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
     <p>Hello, world!</p>
-  </div>
 </template>
 
 
