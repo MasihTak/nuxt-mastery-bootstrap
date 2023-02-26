@@ -18,9 +18,7 @@
 const course = useCourse();
 const route = useRoute();
 
-const progress = useState('progress', () => {
-	return [];
-})
+const progress = useLocalStorage('progress', []);
 
 const isLessonComplete = computed(() => {
 	// check if chapter exist
