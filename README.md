@@ -1,15 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 project
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Nuxt 3 mastery project with a good CSS framework [Bootstrap](https://getbootstrap.com/)! 
+
+Look at the [nuxt 3 documentation](https://nuxt.com/docs) to learn more.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
 
@@ -38,5 +37,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
