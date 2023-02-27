@@ -18,6 +18,11 @@
 const course = useCourse();
 const route = useRoute();
 
+// Make a deliberate error for the third lesson.
+if  (route.params.lessonSlug === '3-typing-component-events') {
+	console.log(route.paramthatdoesnotexistwhoops.capitializeIsNotAMethod());
+}
+
 const progress = useLocalStorage('progress', []);
 
 const isLessonComplete = computed(() => {
