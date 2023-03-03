@@ -1,17 +1,23 @@
 <template>
-  <p class="text-uppercase fw-bold text-secondary mb-0">lesson {{chapter.number}} - {{lesson.number}}</p>
-  <h2 class="mt-0 fs-3">{{ lesson.title }}</h2>
-  <NuxtLink v-if="lesson.sourceUrl"
-     class="text-muted d-inline-block pb-4"
-     :to="lesson.sourceUrl">Download Source Code</NuxtLink>
-    <NuxtLink v-if="lesson.downloadUrl"
-       class="text-muted d-inline-block pb-4"
-       :to="lesson.downloadUrl">Download Video</NuxtLink>
-    <VideoPlayer class="d-block pb-4" v-if="lesson.videoId" :videoId="lesson.videoId" />
-  <p>{{ lesson.text }}</p>
-  <LessonCompleteButton :model-value="isLessonComplete"
-                        @update:model-value="toggleComplete"
-  />
+	<p class="text-uppercase fw-bold text-secondary mb-0">
+		lesson {{chapter.number}} - {{lesson.number}}
+	</p>
+	<h2 class="mt-0 fs-3">{{lesson.title}}</h2>
+	<NuxtLink v-if="lesson.sourceUrl"
+	          class="text-muted d-inline-block pb-4"
+	          :to="lesson.sourceUrl">
+	Download Source Code
+	</NuxtLink>
+	<NuxtLink v-if="lesson.downloadUrl"
+	          class="text-muted d-inline-block pb-4"
+	          :to="lesson.downloadUrl">
+	Download Video
+	</NuxtLink>
+	<VideoPlayer class="d-block pb-4" v-if="lesson.videoId" :videoId="lesson.videoId"/>
+	<p>{{lesson.text}}</p>
+	<LessonCompleteButton :model-value="isLessonComplete"
+	                      @update:model-value="toggleComplete"
+	/>
 </template>
 
 <script setup>
@@ -80,6 +86,4 @@ useHead({
 })
 </script>
 
-<style scoped>
 
-</style>
