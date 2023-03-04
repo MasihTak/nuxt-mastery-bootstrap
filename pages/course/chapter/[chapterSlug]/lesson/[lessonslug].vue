@@ -25,7 +25,8 @@ const course = useCourse();
 const route = useRoute();
 
 definePageMeta({
-	middleware: function({params}, from) {
+	// Inline middlewares
+	middleware: [function({params}, from) {
 		const course = useCourse();
 
 		const chapter = course.chapters.find(
@@ -54,6 +55,14 @@ definePageMeta({
 			)
 		}
 	},
+		function(to, from) {
+			// Make the first chapter publicly available
+			if(to.params.chapterSlug === '1-chapter-1') {
+				return;
+			}
+			return navigateTo('/login');
+		}
+	],
 });
 
 const chapter = computed(() => {
@@ -71,6 +80,7 @@ const lesson = computed(() => {
 const title = computed(() => {
 	return `${lesson.value.title} - ${course.title}`;
 });
+
 useHead({
 	title,
 });
