@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+    telemetry: false,
+
     modules: ['@vueuse/nuxt'],
 
     vite: {
