@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
     telemetry: false,
 
-    modules: ['@vueuse/nuxt'],
+    modules: ['@vueuse/nuxt', '@nuxtjs/supabase'],
 
     vite: {
         css: {
