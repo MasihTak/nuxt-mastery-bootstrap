@@ -3,6 +3,7 @@
 		<div class="container h-100">
 			<slot/>
 		</div>
+		<AppFooter />
 	</div>
 </template>
 
