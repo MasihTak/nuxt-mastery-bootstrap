@@ -2,7 +2,9 @@
 
 Nuxt 3 mastery project with a good CSS framework [Bootstrap](https://getbootstrap.com/)! 
 
-Look at the [nuxt 3 documentation](https://nuxt.com/docs) to learn more.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7b599a0-2f8d-47e1-b053-ac466b17a0dd/deploy-status)](https://app.netlify.com/sites/nuxt-mastery-bootstrap/deploys) 
+[![Depfu](https://badges.depfu.com/badges/3c209e34ffdcfb41f4b068ccea67cb47/status.svg)](https://depfu.com)
+[![Depfu](https://badges.depfu.com/badges/3c209e34ffdcfb41f4b068ccea67cb47/count.svg)](https://depfu.com/github/MasihTak/nuxt-mastery-bootstrap?project_id=39642)
 
 ## Setup
 
