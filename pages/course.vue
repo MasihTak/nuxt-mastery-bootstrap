@@ -1,8 +1,11 @@
 <template>
 	<div>
-		<h1 class="text-center py-5">
+    <div class="d-flex align-items-center justify-content-around">
+		<h1 class="py-5">
 			<strong>{{title}}</strong>
 		</h1>
+    <UserCard />
+    </div>
 		<div class="row course-container justify-content-center gap-3 pb-5">
 			<AppSidebar/>
 			<main class="col-md-6 col-lg-7 bg-white rounded-2 shadow-sm p-4">
